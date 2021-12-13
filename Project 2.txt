@@ -1,0 +1,31 @@
+// Created by Diane Duong
+// Project 2 - Average Class Size
+
+#include <iostream>
+
+using namespace std;
+int main()
+{
+    int classSize = 1, largestClass = 0;
+    double count = 0, totalOfStudents = 0, average = 0;
+
+    do{
+        cout << "Please enter your class size: ";
+        cin >> classSize; 
+
+        if (classSize <= 129 && classSize > 0)
+            {
+                totalOfStudents = totalOfStudents + classSize;
+                count += 1;
+                if (classSize > largestClass)
+                {
+                    largestClass = classSize;
+                }
+            }
+    }
+    while (classSize > 0);
+    average = totalOfStudents / count;
+    cout << "Average class size is " << average << "\nLargest class is " << largestClass;
+    
+    return 0;
+}
