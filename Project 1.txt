@@ -1,0 +1,40 @@
+// Diane Duong
+// Project 1
+
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+int main()
+{
+
+    double randomOfNum;
+    cout << "Please give me a number, any number, followed with a Return \n";
+    cin >> randomOfNum;
+
+    double sideOfSquare;
+    cout << "Enter side of the square ";
+    cin >> sideOfSquare;
+    cout << "If " + std::to_string(sideOfSquare) + " was the side of a square then the area of the square is " + std::to_string(pow(sideOfSquare, 2)) << endl;
+
+    double billOfPercent;
+    cout << "Enter bill amount ";
+    cin >> billOfPercent;
+    cout << "If " + std::to_string(billOfPercent) + " was your bill then with a ten percent tip you should pay " + std::to_string(billOfPercent * .10 + billOfPercent) << endl;
+
+    double shareOfLottery;
+    cout << "Enter lottery win amount ";
+    cin >> shareOfLottery;
+    cout << "If " + std::to_string(shareOfLottery) + " was your lottery win with two other friends then you share is " + std::to_string(shareOfLottery / 3) << endl;
+
+// If 15.2 was your original cost then with buy one get one free discount you should pay 7.600000
+    double bogoOfItem;
+    cout << "Enter item amount ";
+    cin >> bogoOfItem;
+    cout << "If " + std::to_string(bogoOfItem) + " was your original cost then with buy one get one free discount you should pay " + std::to_string(bogoOfItem / 2) << endl;
+    
+    cout << "         --  --\n";
+    cout << "          \\__/";
+         
+    return 0;
+}
